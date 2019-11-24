@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CameraActivity">
+    <SurfaceView
+        android:id="@+id/camera_surfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+<TextView
+    android:id="@+id/camera_time"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="计时区域"
+    android:textColor="#fff"/>
+    <TextView
+        android:id="@+id/step_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:layout_below="@+id/camera_time"
+        />
+
+    <TextView
+        android:id="@+id/orient_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/step_text"
+        android:textColor="#fff"
+        />
+    <Button
+        android:id="@+id/camera_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="拍摄视频"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
